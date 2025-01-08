@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class FixedWindowRateLimiter implements RateLimiter{
-    private int maxAllowedTPS;
     private long maxWindowSize;
     private Map<String, Long> startTimeMapForAPI;
     private Map<String, Integer> requestCountMap;
@@ -15,8 +14,7 @@ public class FixedWindowRateLimiter implements RateLimiter{
     }
 
     @Override
-    public boolean isRequestAllowed(int allowedTPS, String apiName) {
-        this.maxAllowedTPS = allowedTPS;
+    public boolean isRequestAllowed(int maxAllowedTPS, String apiName) {
         long currentTime = System.currentTimeMillis();
 
         startTimeMapForAPI.putIfAbsent(apiName, currentTime);
