@@ -1,0 +1,36 @@
+------------------------------------------------------------------------
+#api1, fixed
+
+curl --location 'http://localhost:8080/api/test' \
+--header 'appId: api1' \
+--header 'rateLimiterName: fixed' \
+--header 'rateLimiterWindowTime: 10000'
+
+------------------------------------------------------------------------
+
+#api1, sliding
+
+curl --location 'http://localhost:8080/api/test' \
+--header 'appId: api1' \
+--header 'rateLimiterName: sliding' \
+--header 'rateLimiterWindowTime: 10000'
+
+------------------------------------------------------------------------
+
+#api2, fixed
+
+curl --location 'http://localhost:8080/api/test' \
+--header 'appId: api2' \
+--header 'rateLimiterName: fixed' \
+--header 'rateLimiterWindowTime: 10000'
+
+------------------------------------------------------------------------
+
+#api2, sliding
+
+curl --location 'http://localhost:8080/api/test' \
+--header 'appId: api2' \
+--header 'rateLimiterName: sliding' \
+--header 'rateLimiterWindowTime: 10000'
+
+------------------------------------------------------------------------
