@@ -12,10 +12,10 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws InvalidDataException {
         //Creating users
-        User user1 = new User(1, "shivi", "shivi@gmail.com", "12345");
-        User user2 = new User(2, "jai", "jai@gmail.com", "43453");
-        User user3 = new User(3, "bhanu", "bhanu@gmail.com", "85654");
-        User user4 = new User(4, "tinni", "tinni@gmail.com", "93445");
+        User user1 = new User(1, "Eric", "Eric@gmail.com", "12345");
+        User user2 = new User(2, "John", "John@gmail.com", "43453");
+        User user3 = new User(3, "Peter", "Peter@gmail.com", "85654");
+        User user4 = new User(4, "Michel", "Michel@gmail.com", "93445");
 
         //Creating groups
         Group group1 = new Group(1, "travel");
